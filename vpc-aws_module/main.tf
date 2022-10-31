@@ -12,13 +12,5 @@ module "vpc" {
   database_subnets = ["10.42.201.0/24", "10.42.202.0/24"]
 
   enable_nat_gateway = true
-  #enable_vpn_gateway = true
   single_nat_gateway = true
-  
-  
-  
-  tags = {
-    Terraform = "true"
-    Environment = "dev"
-  }
 }
